@@ -286,6 +286,35 @@
   </div>
 </div>
 
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class="text-muted">Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- end info section -->
 
 
@@ -311,6 +340,15 @@
     });
   </script>
   
+    <script>
+      $(document).ready(function () {
+        // Show the login modal when the "Login" link is clicked
+        $('.user_option a[href=""]').click(function (e) {
+          e.preventDefault();
+          $('#loginModal').modal('show');
+        });
+      });
+    </script>
 </body>
 
 </html>
