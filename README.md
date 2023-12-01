@@ -1,4 +1,4 @@
-# Tekno
+# DELuxe Merchandise
 Website DELuxe Merchandise
 
 Kelompok 7
