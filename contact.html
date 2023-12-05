@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
   <title>
-    DELuxeMerchandise
+    DELuxe Merchandise
   </title>
 
   <!-- slider stylesheet -->
@@ -36,7 +36,7 @@
       <nav class="navbar navbar-expand-lg custom_nav-container ">
         <a class="navbar-brand" href="index.html">
           <span>
-            DELuxeMerchandise
+            DELuxe Merchandise
           </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -160,7 +160,7 @@
               ABOUT US
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+              DELuxe Merchandise comes with a commitment to present high quality products that combine style, excellence and comfort in every detail.
             </p>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -217,53 +217,93 @@
     <!-- footer section -->
 
   </section>
-<!-- Search Modal -->
-<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="searchModalLabel">Search</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="searchInput">Search:</label>
-            <input type="text" class="form-control" id="searchInput" placeholder="Type here...">
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Search</button>
-        </form>
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p class="text-muted">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-  <!-- end info section -->
-
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <script src="js/custom.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      // Show the login modal when the "Login" link is clicked
-      $('.user_option a[href=""]').click(function (e) {
-        e.preventDefault();
-        $('#loginModal').modal('show');
-      });
   
-      // Show the search modal when the search icon is clicked
-      $('.nav_search-btn').click(function (e) {
-        e.preventDefault();
-        $('#searchModal').modal('show');
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="searchModalLabel">Search</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="searchInput">Search:</label>
+              <input type="text" class="form-control" id="searchInput" placeholder="Type here...">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    <!-- end info section -->
+  
+  
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <script src="js/custom.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Show the login modal when the "Login" link is clicked
+        $('.user_option a[href=""]').click(function (e) {
+          e.preventDefault();
+          $('#loginModal').modal('show');
+        });
       });
-    });
-  </script>
+    </script>
+    
+    <script>
+      $(document).ready(function () {
+        // Show the login modal when the "Login" link is clicked
+        $('.user_option a[href=""]').click(function (e) {
+          e.preventDefault();
+          $('#loginModal').modal('show');
+        });
+    
+        // Show the search modal when the search icon is clicked
+        $('.nav_search-btn').click(function (e) {
+          e.preventDefault();
+          $('#searchModal').modal('show');
+        });
+      });
+    </script>
   
 
 </body>
